@@ -1,0 +1,14 @@
+{
+    "name": "joaopaulo/drupal_module_confessional",
+    "description": "Proof of concept",
+    "type": "drupal-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "João Paulo Seregatte Costa",
+            "email": "seregatte@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

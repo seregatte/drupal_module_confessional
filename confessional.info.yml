@@ -1,0 +1,7 @@
+name: Confessional
+type: module
+description: Drupal Alexa proof of concept
+core: 8.x
+package: Custom
+dependencies:
+  - alexa
