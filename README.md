@@ -1,6 +1,6 @@
-# Drupal Alexa proof of concept
+# Drupal Alexa Integration, Proof of concept.
 
-Drupal module used in a PHP Conference Brazil 2017 Keynote.
+Drupal module used in a [PHP Conference Brazil 2017 Keynote](https://tinyurl.com/drupal-alexa).
 
 ## Requirements
 
