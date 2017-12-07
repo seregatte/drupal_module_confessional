@@ -1,0 +1,22 @@
+{
+    "intents": [
+        {
+            "slots": [
+            {
+                "name": "Confession",
+                "type": "AMAZON.LITERAL"
+            }
+        ],
+            "intent": "MakeAConfession"
+        },
+        {
+            "intent": "HeardAConfession"
+        },
+        {
+            "intent": "AMAZON.HelpIntent"
+        },
+        {
+            "intent": "AMAZON.CancelIntent"
+        }
+    ]
+}

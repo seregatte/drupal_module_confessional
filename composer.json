@@ -2,7 +2,7 @@
     "name": "seregatte/drupal_module_confessional",
     "description": "Proof of concept",
     "type": "drupal-module",
-    "license": "MIT",
+    "license": "GPL-3.0+",
     "authors": [
         {
             "name": "João Paulo Seregatte Costa",

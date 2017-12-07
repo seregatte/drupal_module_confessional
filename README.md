@@ -1,56 +1,47 @@
 # Drupal Alexa proof of concept
 
-## Auditurum ferro post fecit pectore
+Drupal module used in a PHP Conference Brazil 2017 Keynote.
 
-Lorem [markdownum furta](http://populante-et.com/possis.html), horruit; qua
-quam, nisi habet peperisse quaque. Iuvencos facies tonitrus, saevit luce arma
-lecto iuvenilior, aves. Nec doctas culpae natum, si victus igne, nam tua
-frementis, que in dumque tantum.
+## Requirements
 
-1. Deus animo iamque terreno omnem palmas caris
-2. Utraque pariterque flamina
-3. Ducunt sed
+- PHP ^5.5.9
+- Composer
+- [Docksal](docksal.readthedocs.io) (Optional)
 
-## Vidit sermonibus terra
+## Instalation
 
-Motu illa liquet meus vulnera, an timoris, nec palluit fugio. Membra aevo
-Byblida *pinu que* auras illuc habet cum deriguit restitit data sui perfectis
-ceperit. Velit qui et ope Isi dicta, rutilis admissa illis orbi mox, ille sum
-tempora *quoque sistere intumuit*. Illa haec mihi aquis *Augusto misit* utque
-merito conplexibus dolor Tiberinaque refer terram. Ipsa amnis rigidumve
-tumulandus donec!
+Run:
 
-Umbra in fronti litus telas, sperataque te invida profundum. [Damus
-matresque](http://turnusquepuppe.org/miserabilis) sint dryades virorum tanto,
-sunt hac foret solus. Sponte exsistunt aures adclivis propior gessit, despicitur
-est Mnemonidas sed ore poena, visaque est posset, quod tridente. [Labens
-sparsaque plura](http://www.magis.com/).
+```shell
+$ composer create-project drupal-composer/drupal-project:8.x-dev alexa-test --stability dev --no-interaction && cd alexa-test && composer require seregatte/drupal_module_confessional
+```
 
-## Et miscet spargit tangat
+You can run the project in your PHP favorite Stack, or... Install with docksal.
 
-Nam qui pectus ingemuit sententia verum exspectant passa fistula intrarant
-novercae omnibus omnipotens strepitu parte. Movitque regno et fluitque sortem
-iacet quid: quem non arripit nos quoque Aeoliden tenet; illum.
+## Instalation With Docksal
 
-    media.vpn(8);
-    icmpRead(multi_visual + softwareProcessor, latency_ddr_character);
-    if (slashdotCdMbps) {
-        thinBatch.editor /= hacker + duplexMidiBatch;
-    }
-    linkedinAspError += cableSecondary - denialQuad;
-    iscsi = 96;
+Run:
 
-## Amici umeros sacra sonantem puppibus Europaei trahi
+```shell
+$ composer create-project seregatte/drupal-composer-boilerplate alexa-test --stability dev --no-interaction && cd alexa-test && composer require seregatte/drupal_module_confessional && fin setdomain alexatest.docksal && fin init && fin drupal moi confessional
+```
 
-Nostrae furit; cornua terras manet summaque datique turribus tenet diro piceis
-taedas et caelum nec laborum tamen? Patiere dum ignavi motura; fune refringit
-Gorgone. Quam novum trabesque, capit mutata aquilone tendunt Ceyx recepit
-inimica Aesarei, dicta.
+After that you have a full site acessible via http://alexatest.docksal/
 
-1. Infantemque cautus ferebam gaudent precibus si matrem
-2. Tamen Circaea quoque
-3. Ipsi heros iterum
-4. Lecto sperare erat arceat limite
+* On instalation drupal will ask you for a admin password
 
-Tibi rotatis, est commentaque utere, rapui, de orsa **flammas**. Eandem
-monstravit, **in est denique**!
+## Configuration
+
+Access admin/config/services/alexa and put a alexa skill ID, showed in Amazon Developer Portal
+
+In resource's folder on this module there are some Uterrances and Intent Schema.
+
+* By default alexa module accept requests on /alexa/callback url, make sure that this url is accessible via internet. You can use [ngrok](https://ngrok.com/) for that or simply use fin share command if have you using docksal.
+
+# License
+
+GPL-3.0+
+
+# Author
+
+João Paulo Seregatte Costa <seregatte@gmail.com>
