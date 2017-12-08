@@ -32,8 +32,8 @@ class RequestSubscriber implements EventSubscriberInterface {
     switch ($request->intentName) {
       case 'HeardAConfession':
         $confession = $this->getARandomConfession();
-        // $response->endSession()->respondSSML($confession);
         $response->endSession()->respond($confession);
+        // $response->endSession()->respondSSML($confession);
         break;
 
       case 'MakeAConfession':
@@ -50,23 +50,37 @@ class RequestSubscriber implements EventSubscriberInterface {
 
   public function registerAConfession($confession){
     
-    // Create node object with attached file.
     $node = Node::create([
       'type'        => 'article',
       'title'       => $confession
     ]);
     $node->save();
+
   }
 
   public function getARandomConfession(){
+    
+    $message = '';
+
     $query = \Drupal::entityQuery('node');
     $query->condition('status', 1);
     $query->condition('type', 'article');
     $entity_ids = $query->execute();
-    $nid = array_rand($entity_ids);
-    $node = Node::load($nid);
-    $title = $node->getTitle();
-    return sprintf('%s', $title);
-    // return sprintf('<speak><amazon:effect name="whispered">%s</amazon:effect></speak>', $title);
+    
+    if(count($entity_ids) > 0 ){
+      
+      $nid = array_rand($entity_ids);
+      $node = Node::load($nid);
+      $message = $node->getTitle();
+      // $message = sprintf('<speak><amazon:effect name="whispered">%s</amazon:effect></speak>', $message);
+
+    } else {
+      
+      $message = 'Sorry, but I don\'t know any secret';
+      // $message = sprintf('<speak>%s</speak>', $message);
+    
+    }
+
+    return $message;
   }
 }

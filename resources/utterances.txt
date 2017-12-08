@@ -1,7 +1,9 @@
 MakeAConfession I wanna say that {I make deploys with ftp|Confession}
 MakeAConfession I would like to say that {I make deploys with ftp|Confession}
+MakeAConfession I would like to say that {I'm a Java programer|Confession}
+MakeAConfession I wanna say that {I'm a Java programer|Confession}
+MakeAConfession I wanna say that {I like Java|Confession}
 HeardAConfession I wanna heard a secret
 HeardAConfession I wanna heard a confession
 HeardAConfession A confession
-HeardAConfession Surprise me
-HeardAConfession Tell me a confession
+HeardAConfession A secret
