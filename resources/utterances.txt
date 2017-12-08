@@ -3,3 +3,5 @@ MakeAConfession I would like to say that {I make deploys with ftp|Confession}
 HeardAConfession I wanna heard a secret
 HeardAConfession I wanna heard a confession
 HeardAConfession A confession
+HeardAConfession Surprise me
+HeardAConfession Tell me a confession
